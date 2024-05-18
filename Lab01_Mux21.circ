@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="3.7.2" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.7.2(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#HDL-IP" name="6">
+    <tool name="VHDL Entity">
+      <a name="content">--------------------------------------------------------------------------------&#13;
+-- HEIG-VD, institute REDS, 1400 Yverdon-les-Bains&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13;
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+library ieee;&#13;
+  use ieee.std_logic_1164.all;&#13;
+  --use ieee.numeric_std.all;&#13;
+&#13;
+entity VHDL_Component is&#13;
+  port(&#13;
+  ------------------------------------------------------------------------------&#13;
+  --Insert input ports below&#13;
+    horloge_i  : in  std_logic;                    -- input bit example&#13;
+    val_i      : in  std_logic_vector(3 downto 0); -- input vector example&#13;
+  ------------------------------------------------------------------------------&#13;
+  --Insert output ports below&#13;
+    max_o      : out std_logic;                    -- output bit example&#13;
+    cpt_o      : out std_logic_Vector(3 downto 0)  -- output vector example&#13;
+    );&#13;
+end VHDL_Component;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+architecture type_architecture of VHDL_Component is&#13;
+&#13;
+&#13;
+begin&#13;
+&#13;
+&#13;
+end type_architecture;&#13;
+</a>
+    </tool>
+  </lib>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8">
+    <tool name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Menu Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate">
+      <a name="inputs" val="6"/>
+    </tool>
+    <tool lib="1" name="OR Gate">
+      <a name="inputs" val="6"/>
+    </tool>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(150,200)" name="Pin">
+      <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="0" loc="(150,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="0" loc="(150,340)" name="Pin">
+      <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="0" loc="(530,270)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(210,200)" name="NOT Gate"/>
+    <comp lib="1" loc="(290,200)" name="NOT Gate"/>
+    <comp lib="1" loc="(400,220)" name="AND Gate"/>
+    <comp lib="1" loc="(400,320)" name="AND Gate"/>
+    <comp lib="1" loc="(480,270)" name="OR Gate">
+      <a name="inputs" val="6"/>
+    </comp>
+    <comp lib="8" loc="(101,206)" name="Text">
+      <a name="text" val="Sel"/>
+    </comp>
+    <comp lib="8" loc="(102,243)" name="Text">
+      <a name="text" val="ln1"/>
+    </comp>
+    <comp lib="8" loc="(102,344)" name="Text">
+      <a name="text" val="ln2"/>
+    </comp>
+    <comp lib="8" loc="(105,116)" name="Text">
+      <a name="text" val="Nuraly Zholaman "/>
+    </comp>
+    <comp lib="8" loc="(160,140)" name="Text">
+      <a name="text" val="Lab 01: 2-Way, 1-Bit multiplexer"/>
+    </comp>
+    <comp lib="8" loc="(573,274)" name="Text">
+      <a name="text" val="Out1"/>
+    </comp>
+    <comp lib="8" loc="(86,165)" name="Text">
+      <a name="text" val="May 16, 2024"/>
+    </comp>
+    <wire from="(150,200)" to="(180,200)"/>
+    <wire from="(150,240)" to="(350,240)"/>
+    <wire from="(150,340)" to="(350,340)"/>
+    <wire from="(210,200)" to="(240,200)"/>
+    <wire from="(240,200)" to="(240,300)"/>
+    <wire from="(240,200)" to="(260,200)"/>
+    <wire from="(240,300)" to="(350,300)"/>
+    <wire from="(290,200)" to="(350,200)"/>
+    <wire from="(400,220)" to="(430,220)"/>
+    <wire from="(400,320)" to="(430,320)"/>
+    <wire from="(430,220)" to="(430,240)"/>
+    <wire from="(430,300)" to="(430,320)"/>
+    <wire from="(480,270)" to="(530,270)"/>
+  </circuit>
+</project>
