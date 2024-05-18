@@ -1,0 +1,1 @@
+# osoc_season1_Zholaman_Nuraly
